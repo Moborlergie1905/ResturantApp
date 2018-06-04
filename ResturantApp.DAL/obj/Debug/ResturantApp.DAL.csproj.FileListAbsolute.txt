@@ -1,0 +1,15 @@
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.DAL.dll.config
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.DAL.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.DAL.pdb
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.BOL.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.BOL.pdb
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.initDB.resources
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.newMig.resources
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.csproj.GenerateResource.Cache
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.pdb

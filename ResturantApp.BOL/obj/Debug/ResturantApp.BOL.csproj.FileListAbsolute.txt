@@ -1,0 +1,10 @@
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\ResturantApp.BOL.dll.config
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\ResturantApp.BOL.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\ResturantApp.BOL.pdb
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.xml
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.dll
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.pdb
+C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.csprojResolveAssemblyReference.cache

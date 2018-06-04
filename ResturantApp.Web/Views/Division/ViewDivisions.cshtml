@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ResturantApp.BOL.Division>
+
+@{
+    ViewBag.Title = "ViewDivisions";
+    Layout = null;
+}
+
+<table class="table table-striped table-dark">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            <a class="btn btn-success btn-sm text-white" onclick="Edit('@Url.Action("Create","Division", new { id=@item.divID})', document.getElementById('addDivision'))"><i class="fa fa-pencil fa-lg"></i></a>
+            <a class="btn btn-danger btn-sm text-white" onclick="Delete('@Url.Action("Delete","Division", new { id=@item.divID})', document.getElementById('viewDivision'))"><i class="fa fa-trash fa-lg"></i></a>
+        </td>
+    </tr>
+}
+
+</table>

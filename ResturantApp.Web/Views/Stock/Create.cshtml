@@ -1,0 +1,19 @@
+﻿@model ResturantApp.BOL.InventoryItem
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        @*<a href="#">Dashboard</a>*@
+        @Html.ActionLink("Dashboard", "Index", "Home")
+    </li>
+    <li class="breadcrumb-item">
+        @*<a href="#">Dashboard</a>*@
+        @Html.ActionLink("Stock", "Index")
+    </li>
+    <li class="breadcrumb-item active">New Stock</li>
+</ol>
+
