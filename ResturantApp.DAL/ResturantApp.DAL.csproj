@@ -57,6 +57,14 @@
     <Compile Include="Migrations\201805151112346_newMig.Designer.cs">
       <DependentUpon>201805151112346_newMig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806271358004_dbUpdateOne.cs" />
+    <Compile Include="Migrations\201806271358004_dbUpdateOne.Designer.cs">
+      <DependentUpon>201806271358004_dbUpdateOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806271446442_update_item_location_M2M.cs" />
+    <Compile Include="Migrations\201806271446442_update_item_location_M2M.Designer.cs">
+      <DependentUpon>201806271446442_update_item_location_M2M.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantContext.cs" />
@@ -77,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805151112346_newMig.resx">
       <DependentUpon>201805151112346_newMig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806271358004_dbUpdateOne.resx">
+      <DependentUpon>201806271358004_dbUpdateOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806271446442_update_item_location_M2M.resx">
+      <DependentUpon>201806271446442_update_item_location_M2M.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

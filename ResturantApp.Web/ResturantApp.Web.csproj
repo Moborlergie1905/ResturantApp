@@ -220,6 +220,7 @@
     <Content Include="fonts\roboto\Roboto-Regular.woff2" />
     <Content Include="fonts\roboto\Roboto-Thin.woff" />
     <Content Include="fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="KeepingForFuture.txt" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -384,6 +385,9 @@
     <Content Include="Views\Category\Create.cshtml" />
     <Content Include="Views\Division\ViewDivisions.cshtml" />
     <Content Include="Views\Division\Create.cshtml" />
+    <Content Include="Views\Group\ViewGroups.cshtml" />
+    <Content Include="Views\Group\Create.cshtml" />
+    <Content Include="Views\Group\Empty.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -398,7 +402,6 @@
     <Folder Include="Areas\Security\Views\Shared\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Branch\" />
-    <Folder Include="Views\Group\" />
     <Folder Include="Views\Invoice\" />
     <Folder Include="Views\Location\" />
     <Folder Include="Views\Measurement\" />

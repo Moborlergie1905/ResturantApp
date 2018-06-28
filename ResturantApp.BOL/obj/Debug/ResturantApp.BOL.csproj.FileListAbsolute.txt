@@ -8,3 +8,12 @@ C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Re
 C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.dll
 C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.pdb
 C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.csprojResolveAssemblyReference.cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\ResturantApp.BOL.dll.config
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\ResturantApp.BOL.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\ResturantApp.BOL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.xml
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.pdb

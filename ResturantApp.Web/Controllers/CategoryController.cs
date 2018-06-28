@@ -37,13 +37,13 @@ namespace ResturantApp.Web.Controllers
             return View(cat);
         }
         [HttpPost]
-        public ActionResult Create(Category category)
+        public async Task<ActionResult> Create(Category category)
         {
             if (category.CatID == 0)
                 UoW.Categories.Add(category);
             else
                 UoW.Categories.Update(category);
-            UoW.Save();
+            await UoW.Complete();
             return RedirectToAction("ViewCategories");
 
         }

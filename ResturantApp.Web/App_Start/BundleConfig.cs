@@ -36,6 +36,7 @@ namespace ResturantApp.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
                       "~/Content/sb-admin/sb-admin.css",
+                      "~/Content/Site.css",
                       "~/Scripts/datatables/dataTable.bootstrap4.css"
                       ));
             bundles.Add(new StyleBundle("~/Content/awesome").Include(

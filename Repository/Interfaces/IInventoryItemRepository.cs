@@ -9,6 +9,6 @@ namespace Repository.Interfaces
 {
     public interface IInventoryItemRepository : IRepository<InventoryItem>
     {
-        Task<IEnumerable<InventoryItem>> GetByLocation(int id);
+        //Task<IEnumerable<InventoryItem>> GetByLocation(int id);
     }
 }

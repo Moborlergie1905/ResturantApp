@@ -10,6 +10,10 @@ namespace ResturantApp.BOL
 {
     public class InventoryItem
     {
+        public InventoryItem()
+        {
+            this.Locations = new HashSet<Location>();
+        }
         [Key]
         public int ItemID { get; set; }
         public string ProductCode { get; set; }
@@ -27,9 +31,9 @@ namespace ResturantApp.BOL
         public decimal UnitPrice { get; set; }
         public decimal AveragePrice { get; set; }        
         public decimal SellingPrice { get; set; }
-        [Required]
-        [ForeignKey("Location")]
-        public int LocationId { get; set; }
+        //[Required]
+        //[ForeignKey("Location")]
+        //public int LocationId { get; set; }
         public int Quantity { get; set; }
         public int Min { get; set; }
         public int Max { get; set; }
@@ -41,7 +45,7 @@ namespace ResturantApp.BOL
 
         //public virtual Supplier Supplier { get; set; }
         public virtual Group Group { get; set; }
-        public virtual Location Location { get; set; }
+        public virtual ICollection<Location> Locations { get; set; }
         public virtual ICollection<Expiration> Expiration { get; set; }
         public virtual ICollection<PurchaseItem> PurchaseItems { get; set; }
     }

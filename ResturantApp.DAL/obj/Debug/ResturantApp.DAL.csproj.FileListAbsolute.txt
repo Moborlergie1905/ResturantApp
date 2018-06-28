@@ -13,3 +13,20 @@ C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Re
 C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.csproj.GenerateResource.Cache
 C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.dll
 C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.DAL.dll.config
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.DAL.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.DAL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.BOL.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\ResturantApp.BOL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.xml
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.csprojResolveAssemblyReference.cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.initDB.resources
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.newMig.resources
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.dbUpdateOne.resources
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.csproj.GenerateResource.Cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.dll
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.update_item_location_M2M.resources

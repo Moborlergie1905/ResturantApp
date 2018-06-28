@@ -13,12 +13,17 @@ namespace ResturantApp.Web.Controllers
         public IEnumerable<Group> GetGroups()
         {
             var groups = UoW.Groups.GetAll();
+
             return groups.ToList();
         }
 
         public ActionResult ViewGroups()
         {
-            return View(GetGroups());
+            var chkGroup = GetGroups();
+            if (chkGroup.Count() == 0)
+                return View("Empty");
+            else
+                return View(chkGroup);
         }
 
         public ActionResult Create(int id = 0)
@@ -27,7 +32,7 @@ namespace ResturantApp.Web.Controllers
             Group group = new Group();
             if (id != 0)
             {
-
+                group = UoW.Groups.Get(id);
             }
             return View(group);
         }
@@ -35,17 +40,12 @@ namespace ResturantApp.Web.Controllers
         [HttpPost]
         public async Task<ActionResult> Create(Group group)
         {
-            UoW.Groups.Add(group);
+            if (group.GpID == 0)
+                UoW.Groups.Add(group);
+            else
+                UoW.Groups.Update(group);
             await UoW.Complete();
             return RedirectToAction("ViewGroups");
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Update(Group group)
-        {
-            UoW.Groups.Update(group);
-            await UoW.Complete();
-            return RedirectToAction("Index");
         }
 
         public async Task<ActionResult> Delete(int id)

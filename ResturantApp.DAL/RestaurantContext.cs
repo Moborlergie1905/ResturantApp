@@ -54,10 +54,10 @@ namespace ResturantApp.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-            modelBuilder.Entity<Location>()
-                .HasMany<InventoryItem>(i => i.InventoryItems)
-                .WithRequired(l => l.Location)
-                .WillCascadeOnDelete();           
+            //modelBuilder.Entity<Location>()
+            //    .HasMany<InventoryItem>(i => i.InventoryItems)
+            //    .WithRequired(l => l.Location)
+            //    .WillCascadeOnDelete();           
             //modelBuilder.Entity<InventoryItem>()
             //    .HasRequired(x => x.Location)
             //    .WithRequiredDependent()

@@ -16,10 +16,10 @@ namespace Repository.Repositories
         {
         }
 
-        public async Task<IEnumerable<InventoryItem>> GetByLocation(int id)
-        {
-            return await RestaurantContext.InventoryItem.Where(x => x.LocationId == id).ToListAsync();
-        }
+        //public async Task<IEnumerable<InventoryItem>> GetByLocation(int id)
+        //{
+        //    return await RestaurantContext.InventoryItem.Where(x => x.LocationId == id).ToListAsync();
+        //}
 
         public RestaurantContext RestaurantContext
         {

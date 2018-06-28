@@ -1,0 +1,65 @@
+﻿========================Remaining Group Fields=============================
+ <div class="form-group">
+                    @Html.LabelFor(model => model.AssetAccount, htmlAttributes: new { @class = "control-label label-size col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-5 col-sm-5 mb-5">
+                        @Html.EditorFor(model => model.AssetAccount, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.AssetAccount, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.RevenueAccount, htmlAttributes: new { @class = "control-label label-size col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-5 col-sm-5 mb-5">
+                        @Html.EditorFor(model => model.RevenueAccount, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.RevenueAccount, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ExpensesAccount, htmlAttributes: new { @class = "control-label label-size col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-5 col-sm-5 mb-5">
+                        @Html.EditorFor(model => model.ExpensesAccount, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ExpensesAccount, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AdjustmentAccount, htmlAttributes: new { @class = "control-label label-size col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-5 col-sm-5 mb-5">
+                        @Html.EditorFor(model => model.AdjustmentAccount, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.AdjustmentAccount, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    @Html.LabelFor(model => model.Tax1, htmlAttributes: new { @class = "control-label col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-8 col-sm-8 mb-8">
+                        @Html.CheckBoxFor(model => model.Tax1, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Tax1, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    @Html.LabelFor(model => model.Tax2, htmlAttributes: new { @class = "control-label col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-8 col-sm-8 mb-8">
+                        @Html.CheckBoxFor(model => model.Tax2, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Tax2, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    @Html.LabelFor(model => model.Tax3, htmlAttributes: new { @class = "control-label col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-8 col-sm-8 mb-8">
+                        @Html.CheckBoxFor(model => model.Tax3, new { htmlAttributes = new { @class = "form-control" } })                        
+                        @Html.ValidationMessageFor(model => model.Tax3, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    @Html.LabelFor(model => model.Markup, htmlAttributes: new { @class = "control-label col-xl-4 col-sm-4 mb-4" })
+                    <div class="col-xl-8 col-sm-8 mb-8">
+                        @Html.EditorFor(model => model.Markup, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Markup, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+	====================================================================================================================
