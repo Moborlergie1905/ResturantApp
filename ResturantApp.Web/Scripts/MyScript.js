@@ -1,4 +1,15 @@
-﻿function jQueryAjaxPost(form, viewDiv, addDiv) {
+﻿$(document).ready(function () {
+    //$("#myCarousel").carousel('pause');
+    $('#viewL').click(function () {
+        $("#myCarousel").carousel(1);
+
+    });
+    $('#addL').click(function () {
+        $("#myCarousel").carousel(0);
+
+    });
+});
+function jQueryAjaxPost(form, viewDiv, addDiv) {
     $.validator.unobtrusive.parse(form);
     if ($(form).valid()) {
         var ajaxConfig = {
@@ -8,7 +19,7 @@
             success: function (response) {
                 //$('#viewRecords').html(response);
                 $(viewDiv).html(response);
-                refreshAddNew($(form).attr('data-resetUrl'), addDiv)
+                refreshAddNew($(form).attr('data-resetUrl'), addDiv, 0)
             }
         }
         if ($(form).attr('enctype') == "multipart/form-data") {
@@ -19,13 +30,15 @@
     }   
     return false;
 }
-function refreshAddNew(resetUrl, addDiv) {
+function refreshAddNew(resetUrl, addDiv, slideIndex) {
     $.ajax({
         type: 'GET',
         url: resetUrl,
         success: function (response) {
             //$("#addRecord").html(response);
             $(addDiv).html(response);
+            $("#myCarousel").carousel(slideIndex);
+            $("#myCarousel").carousel('pause')
         }
     });
 }
@@ -33,8 +46,10 @@ function Edit(url, addDiv) {
     $.ajax({
         type: 'GET',
         url: url,
-        success: function (response) {
+        success: function (response) {            
             $(addDiv).html(response);
+            $("#myCarousel").carousel(1);
+            $("#myCarousel").carousel('pause')
         }
     });
 }
@@ -50,3 +65,5 @@ function Delete(url, viewDiv) {
         });
     }
 }
+
+

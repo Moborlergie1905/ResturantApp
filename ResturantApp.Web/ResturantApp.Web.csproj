@@ -388,6 +388,12 @@
     <Content Include="Views\Group\ViewGroups.cshtml" />
     <Content Include="Views\Group\Create.cshtml" />
     <Content Include="Views\Group\Empty.cshtml" />
+    <Content Include="Views\Location\ViewLocations.cshtml" />
+    <Content Include="Views\Location\Create.cshtml" />
+    <Content Include="Views\Location\Empty.cshtml" />
+    <Content Include="Views\Location\Empty1.cshtml" />
+    <Content Include="Views\Measurement\Empty.cshtml" />
+    <Content Include="Views\Measurement\ViewUnits.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -403,8 +409,6 @@
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Branch\" />
     <Folder Include="Views\Invoice\" />
-    <Folder Include="Views\Location\" />
-    <Folder Include="Views\Measurement\" />
     <Folder Include="Views\Production\" />
     <Folder Include="Views\Purchase\" />
     <Folder Include="Views\Supplier\" />

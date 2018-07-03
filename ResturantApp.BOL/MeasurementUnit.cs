@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,11 @@ namespace ResturantApp.BOL
     {
         [Key]
         public int UnitID { get; set; }
+        [DisplayName("Name")]
+        [Required(ErrorMessage = "Enter unit name")]
         public string UnitName { get; set; }
+        [DisplayName("Unit")]
+        [Required(ErrorMessage = "Enter unit name")]
+        public string Notation { get; set; }
     }
 }

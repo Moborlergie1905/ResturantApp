@@ -184,7 +184,20 @@
                     <span class="sr-only">Close</span>
                 </button>
             </div>
-            <div class="modal-body"></div>
+            <div class="modal-body">
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="viewLocation">
+                            @Html.Action("ViewLocations","Location")
+                            @*<a href="#" id="viewL">Add Location</a>*@
+                        </div>
+                        <div class="carousel-item" id="addLocation">
+                            @Html.Action("Create", "Location")
+                            @*<a href="#" id="addL">View Location</a>*@
+                        </div>                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -200,11 +213,36 @@
                     <span class="sr-only">Close</span>
                 </button>
             </div>
-            <div class="modal-body"></div>
+            <div class="modal-body">
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="viewMeasurement">
+                            @Html.Action("ViewUnits", "Measurement")                           
+                        </div>
+                        <div class="carousel-item" id="addMeasurement">
+                            @Html.Action("Create", "Measurement")                           
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 @section Scripts{
     @Scripts.Render("~/bundles/jqueryval")
 @*<script src="~/Scripts/MyScript.js"></script>*@
+    <script>
+        //$(document).ready(function () {
+        //    $("#myCarousel").carousel('pause');
+        //    $('#viewL').click(function () {
+        //        $("#myCarousel").carousel(1);
+
+        //    });
+        ////    $('#addL').click(function () {
+        //        $("#myCarousel").carousel(0);
+
+        //    });
+        //});
+
+    </script>
 }

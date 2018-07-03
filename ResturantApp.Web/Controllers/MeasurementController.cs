@@ -10,33 +10,38 @@ namespace ResturantApp.Web.Controllers
 {
     public class MeasurementController : BaseController
     {       
-        public async Task<List<MeasurementUnit>> Units()
+        public IEnumerable<MeasurementUnit> GetUnits()
         {
-            var units = await UoW.Units.GetAllAsync();
-            if(units != null)
-            {
-                return units.ToList();
-            }
-            else
-            {
-                return ViewBag.msg = "";
-            }           
+            var units =  UoW.Units.GetAll();
+            return units;  
         }
 
+        public ActionResult ViewUnits()
+        {
+            var units = GetUnits();
+            if (units.Count() == 0)
+                return View("Empty");
+            return View(units);
+        }
+
+        public ActionResult Create(int id = 0)
+        {
+            MeasurementUnit unit = new MeasurementUnit();
+            if(id != 0)
+            {
+                unit = UoW.Units.Get(id);
+            }
+            return View(unit);
+        }
         [HttpPost]
         public async Task<ActionResult> Create(MeasurementUnit unit)
         {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
+            if (unit.UnitID != 0)
+                UoW.Units.Update(unit);
             else
-            {
                 UoW.Units.Add(unit);
-                await UoW.Complete();
-
-                return RedirectToAction("Index");
-            }
+            await UoW.Complete();
+            return RedirectToAction("ViewUnits");
         }
     }
 }
