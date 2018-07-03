@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Empty";
+    Layout = null;
+}
+<p>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("Create","Category", new { id=0})', document.getElementById('addCategory'), document.getElementById('categoryCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+</p>
+<h5>Category list is empty</h5>
+

@@ -387,13 +387,16 @@
     <Content Include="Views\Division\Create.cshtml" />
     <Content Include="Views\Group\ViewGroups.cshtml" />
     <Content Include="Views\Group\Create.cshtml" />
-    <Content Include="Views\Group\Empty.cshtml" />
     <Content Include="Views\Location\ViewLocations.cshtml" />
     <Content Include="Views\Location\Create.cshtml" />
     <Content Include="Views\Location\Empty.cshtml" />
     <Content Include="Views\Location\Empty1.cshtml" />
     <Content Include="Views\Measurement\Empty.cshtml" />
     <Content Include="Views\Measurement\ViewUnits.cshtml" />
+    <Content Include="Views\Measurement\Create.cshtml" />
+    <Content Include="Views\Category\Empty.cshtml" />
+    <Content Include="Views\Division\Empty.cshtml" />
+    <Content Include="Views\Group\Empty.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

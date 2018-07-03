@@ -2,6 +2,6 @@
     Layout = null;
 }
 <p>
-    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("Create","Measurement", new { id=0})', document.getElementById('addMeasurement'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("Create","Measurement", new { id=0})', document.getElementById('addMeasurement'), document.getElementById('unitCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
 </p>
 <h5>Measurement unit list is empty</h5>

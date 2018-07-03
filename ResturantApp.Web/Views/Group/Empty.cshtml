@@ -1,15 +1,10 @@
-﻿@{
+﻿
+@{
+    ViewBag.Title = "Empty";
     Layout = null;
 }
+<p>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("Create","Group", new { id=0})', document.getElementById('addGroup'), document.getElementById('groupCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+</p>
+<h5>Group list is empty</h5>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <h4>You have no groups availale</h4>
-</body>
-</html>

@@ -9,7 +9,7 @@
 
     });
 });
-function jQueryAjaxPost(form, viewDiv, addDiv) {
+function jQueryAjaxPost(form, viewDiv, addDiv, carosl) {
     $.validator.unobtrusive.parse(form);
     if ($(form).valid()) {
         var ajaxConfig = {
@@ -19,7 +19,7 @@ function jQueryAjaxPost(form, viewDiv, addDiv) {
             success: function (response) {
                 //$('#viewRecords').html(response);
                 $(viewDiv).html(response);
-                refreshAddNew($(form).attr('data-resetUrl'), addDiv, 0)
+                refreshAddNew($(form).attr('data-resetUrl'), addDiv, carosl, 0)
             }
         }
         if ($(form).attr('enctype') == "multipart/form-data") {
@@ -30,26 +30,26 @@ function jQueryAjaxPost(form, viewDiv, addDiv) {
     }   
     return false;
 }
-function refreshAddNew(resetUrl, addDiv, slideIndex) {
+function refreshAddNew(resetUrl, addDiv, carsl, slideIndex) {
     $.ajax({
         type: 'GET',
         url: resetUrl,
         success: function (response) {
             //$("#addRecord").html(response);
             $(addDiv).html(response);
-            $("#myCarousel").carousel(slideIndex);
-            $("#myCarousel").carousel('pause')
+            $(carsl).carousel(slideIndex);
+            $(carsl).carousel('pause')
         }
     });
 }
-function Edit(url, addDiv) {
+function Edit(url, addDiv, carosl) {
     $.ajax({
         type: 'GET',
         url: url,
         success: function (response) {            
             $(addDiv).html(response);
-            $("#myCarousel").carousel(1);
-            $("#myCarousel").carousel('pause')
+            $(carosl).carousel(1);
+            $(carosl).carousel('pause')
         }
     });
 }

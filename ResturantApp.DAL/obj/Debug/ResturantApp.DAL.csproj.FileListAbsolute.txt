@@ -30,3 +30,4 @@ D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\Resturan
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.dll
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.pdb
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.update_item_location_M2M.resources
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.editToMeasurement.resources

@@ -4,8 +4,10 @@
     ViewBag.Title = "ViewDivisions";
     Layout = null;
 }
-
-<table class="table table-striped table-dark">
+<p>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("Create","Division", new { id=0})', document.getElementById('addDivision'), document.getElementById('divisionCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+</p>
+<table class="table table-striped table-dark table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Category.Name)
@@ -25,7 +27,7 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            <a class="btn btn-success btn-sm text-white" onclick="Edit('@Url.Action("Create","Division", new { id=@item.divID})', document.getElementById('addDivision'))"><i class="fa fa-pencil fa-lg"></i></a>
+            <a class="btn btn-success btn-sm text-white" onclick="Edit('@Url.Action("Create","Division", new { id=@item.divID})', document.getElementById('addDivision'), document.getElementById('divisionCarousel'))"><i class="fa fa-pencil fa-lg"></i></a>
             <a class="btn btn-danger btn-sm text-white" onclick="Delete('@Url.Action("Delete","Division", new { id=@item.divID})', document.getElementById('viewDivision'))"><i class="fa fa-trash fa-lg"></i></a>
         </td>
     </tr>

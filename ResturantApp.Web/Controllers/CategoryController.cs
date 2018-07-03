@@ -24,6 +24,8 @@ namespace ResturantApp.Web.Controllers
         public ActionResult ViewCategories()
         {
             var categories = UoW.Categories.GetAll();
+            if (categories.Count() == 0)
+                return View("Empty");
             return View(categories);
         }
 

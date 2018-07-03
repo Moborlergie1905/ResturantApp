@@ -5,7 +5,7 @@
     Layout = null;
 }
 
-@using (Html.BeginForm("Create","Category",FormMethod.Post, new { enctype = "multipart/form-data", onSubmit= "return jQueryAjaxPost(this, document.getElementById('viewCategory'), document.getElementById('addCategory'));", data_resetUrl = Url.Action("Create", "Category", new { id = 0 }) }))
+@using (Html.BeginForm("Create","Category",FormMethod.Post, new { enctype = "multipart/form-data", onSubmit= "return jQueryAjaxPost(this, document.getElementById('viewCategory'), document.getElementById('addCategory'), document.getElementById('categoryCarousel'));", data_resetUrl = Url.Action("Create", "Category", new { id = 0 }) }))
 {
     @Html.AntiForgeryToken()
     @Html.HiddenFor(model => model.CatID)
@@ -22,6 +22,7 @@
         <div class="form-group row">
             <div class="offset-3 col-xl-9 col-sm-9 mb-9">
                 <input type="submit" value="Add" class="btn btn-dark" />
+                <a class="btn btn-info text-white" onclick="refreshAddNew('@Url.Action("Create","Category", new { id=0})', document.getElementById('addCategory'), document.getElementById('categoryCarousel'), 0)">Return</a>
             </div>
         </div>
     </div>

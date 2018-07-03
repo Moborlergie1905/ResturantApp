@@ -18,7 +18,10 @@ namespace ResturantApp.Web.Controllers
 
         public ActionResult ViewDivisions()
         {
-            return View(GetDivisions());
+            var divisions = GetDivisions();
+            if (divisions.Count() == 0)
+                return View("Empty");
+            return View(divisions);
         }
 
         public ActionResult Create(int id = 0)

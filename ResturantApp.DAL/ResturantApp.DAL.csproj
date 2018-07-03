@@ -65,6 +65,10 @@
     <Compile Include="Migrations\201806271446442_update_item_location_M2M.Designer.cs">
       <DependentUpon>201806271446442_update_item_location_M2M.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807031449398_editToMeasurement.cs" />
+    <Compile Include="Migrations\201807031449398_editToMeasurement.Designer.cs">
+      <DependentUpon>201807031449398_editToMeasurement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantContext.cs" />
@@ -91,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806271446442_update_item_location_M2M.resx">
       <DependentUpon>201806271446442_update_item_location_M2M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807031449398_editToMeasurement.resx">
+      <DependentUpon>201807031449398_editToMeasurement.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
