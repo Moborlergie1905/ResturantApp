@@ -17,4 +17,3 @@ D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFr
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.SqlServer.xml
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.dll
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.pdb
-D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.csprojResolveAssemblyReference.cache

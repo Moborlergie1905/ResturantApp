@@ -19,9 +19,11 @@ namespace ResturantApp.BOL
         public int QtyOH { get; set; }
         public int Variance { get; set; }
         public int NewQty { get; set; }
-        public string Unit { get; set; }
+        [ForeignKey("MeasurementUnit")]
+        public int Unit { get; set; }
 
         public virtual Adjustment Adjustment { get; set; }
         public virtual InventoryItem InventoryItem { get; set; }
+        public virtual MeasurementUnit MeasurementUnit { get; set; }
     }
 }

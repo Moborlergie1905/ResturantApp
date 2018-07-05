@@ -6,13 +6,13 @@
 }
 
 
-<ol class="breadcrumb">
+@*<ol class="breadcrumb">
     <li class="breadcrumb-item">
-        @*<a href="#">Dashboard</a>*@
+        <a href="#">Dashboard</a>
         @Html.ActionLink("Dashboard","Index","Home")
     </li>
     <li class="breadcrumb-item active">Stock</li>
-</ol>
+</ol>*@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fa fa-table"> Stock Level</i>
@@ -29,7 +29,7 @@
                         <th>Description</th>
                         <th>Group</th>
                         @*<td>Category</td>*@
-                        <th>Location</th>
+                        @*<th>Location</th>*@
                         <th>Level</th>
                         <th></th>
                     </tr>
@@ -43,7 +43,7 @@
                                 <td>@item.ProductCode</td>
                                 <td>@item.Description</td>
                                 <td>@item.Group.Name</td>
-                                <td>@item.Location.Name</td>
+                                @*<td>@item.Location.Name</td>*@
                                 <td>@item.Quantity</td>
                                 <td>Update</td>
                             </tr>

@@ -18,13 +18,15 @@ namespace ResturantApp.BOL
         public int InvItemId { get; set; }
         public int Quantity { get; set; }
         public decimal UntitCost { get; set; }
-        public decimal TotalCost { get; set; }             
-        public string Unit { get; set; }
+        public decimal TotalCost { get; set; }  
+        [ForeignKey("MeasurementUnit")]           
+        public int Unit { get; set; }
         [ForeignKey("Location")]
         public int LocationId { get; set; }
 
         public virtual Production  Production { get; set; }
         public virtual InventoryItem InventoryItem { get; set; }
         public virtual Location Location { get; set; }
+        public virtual MeasurementUnit MeasurementUnit { get; set; }
     }
 }

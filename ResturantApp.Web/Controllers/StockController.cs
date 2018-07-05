@@ -17,25 +17,24 @@ namespace ResturantApp.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Create(int id = 0)
         {
-            return View();
+            ViewBag.GroupID = new SelectList(UoW.Groups.GetAll(), "GpID", "Name");
+            InventoryItem item = new InventoryItem();
+            if (item.ItemID != 0)
+                item = UoW.Stocks.Get(id);
+            return View(item);
         }
 
         [HttpPost]
         public async Task<ActionResult> Create(InventoryItem stock)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
+        {           
+            if (stock.ItemID != 0)
+                UoW.Stocks.Update(stock);
             else
-            {
                 UoW.Stocks.Add(stock);
-                await UoW.Complete();
-
-                return RedirectToAction("Index");
-            }
+            await UoW.Complete();
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
@@ -66,28 +65,6 @@ namespace ResturantApp.Web.Controllers
             {
                 return RedirectToAction("Index");
             }
-        }
-
-        [HttpGet]
-        public async Task<ActionResult> Update(int id)
-        {
-            var stock = await UoW.Stocks.GetAsync(id);
-            if (stock != null)
-            {
-                return View(stock);
-            }
-            else
-            {
-                return RedirectToAction("Index");
-            }
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Update(InventoryItem stock)
-        {
-            UoW.Stocks.Update(stock);
-            await UoW.Complete();
-            return RedirectToAction("Index");
         }
 
         public async Task<ActionResult> Delete(int id)

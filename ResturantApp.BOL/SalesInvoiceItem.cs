@@ -17,11 +17,13 @@ namespace ResturantApp.BOL
         [ForeignKey("InventoryItem")]
         public int InventItemId { get; set; }
         public int Quantity { get; set; }
-        public string Unit { get; set; }
+        [ForeignKey("MeasurementUnit")]
+        public int Unit { get; set; }
         public decimal Price { get; set; }
         public decimal Amount { get; set; }
 
         public virtual SalesInvoice SalesInvoice { get; set; }
         public virtual InventoryItem InventoryItem { get; set; }
+        public virtual MeasurementUnit MeasurementUnit { get; set; }
     }
 }
