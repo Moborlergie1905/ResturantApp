@@ -20,6 +20,7 @@ namespace ResturantApp.Web.Controllers
         public ActionResult Create(int id = 0)
         {
             ViewBag.GroupID = new SelectList(UoW.Groups.GetAll(), "GpID", "Name");
+            ViewBag.ProductID = new SelectList(UoW.Products.GetAll(), "ProdID", "Name");
             InventoryItem item = new InventoryItem();
             if (item.ItemID != 0)
                 item = UoW.Stocks.Get(id);

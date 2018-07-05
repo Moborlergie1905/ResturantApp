@@ -65,7 +65,7 @@
     <Compile Include="Interfaces\IMeasurementUnitRepository.cs" />
     <Compile Include="Interfaces\IProductionItemRepository.cs" />
     <Compile Include="Interfaces\IProductionRepository.cs" />
-    <Compile Include="Interfaces\IProductionTypeRepository.cs" />
+    <Compile Include="Interfaces\IProductRepository.cs" />
     <Compile Include="Interfaces\IPurchaseRepository.cs" />
     <Compile Include="Interfaces\IPurchaseItemRepository.cs" />
     <Compile Include="Interfaces\IPurchaseOrderRepository.cs" />
@@ -95,7 +95,7 @@
     <Compile Include="Repositories\MeasurementUnitRepository.cs" />
     <Compile Include="Repositories\ProductionItemRepository.cs" />
     <Compile Include="Repositories\ProductionRepository.cs" />
-    <Compile Include="Repositories\ProductionTypeRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\PurchaseItemRepository.cs" />
     <Compile Include="Repositories\PurchaseOrderItemRepository.cs" />
     <Compile Include="Repositories\PurchaseOrderRepository.cs" />

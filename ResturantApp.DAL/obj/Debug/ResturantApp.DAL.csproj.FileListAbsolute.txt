@@ -32,3 +32,4 @@ D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\Resturan
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.update_item_location_M2M.resources
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.editToMeasurement.resources
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.modelUpdate.resources
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.DAL\obj\Debug\ResturantApp.DAL.Migrations.newModelDB.resources

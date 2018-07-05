@@ -12,15 +12,13 @@ namespace ResturantApp.BOL
     {
         [Key]
         public int ProdID { get; set; }
-        [ForeignKey("ProductionType")]
-        public int ProdTypeId { get; set; }
+        public ProductionType ProductionType { get; set; }
         [ForeignKey("InventoryItem")]
         public int InvItemId { get; set; }
         public DateTime ProdDate { get; set; }
         public int Qty { get; set; }
 
-        public virtual ICollection<ProductionIngredient> Ingredients { get; set; }
-        public virtual ProductionType ProductionType { get; set; }
+        public virtual ICollection<ProductionIngredient> Ingredients { get; set; }       
         public virtual InventoryItem InventoryItem { get; set; }
     }
 }

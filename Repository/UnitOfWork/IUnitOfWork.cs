@@ -23,8 +23,7 @@ namespace Repository.UnitOfWork
         ILocationRepository Locations { get; }
         IMeasurementUnitRepository Units { get; }
         IProductionRepository Productions { get; }
-        IProductionItemRepository Ingredients { get; }
-        IProductionTypeRepository ProductionTypes { get; }
+        IProductionItemRepository Ingredients { get; }       
         IPurchaseRepository Purchases { get; }
         IPurchaseItemRepository PurchaseItems { get; }
         IPurchaseOrderRepository PurchaseOrders { get; }
@@ -37,6 +36,7 @@ namespace Repository.UnitOfWork
         IWastageRepository Wastages { get; }
         IWastageItemRepository WastageItems { get; }
         IWorkerRepository Workers { get; }
+        IProductRepository Products { get; }
         Task<int> Complete();
     }
 }

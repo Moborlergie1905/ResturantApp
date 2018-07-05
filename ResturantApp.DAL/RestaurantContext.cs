@@ -34,8 +34,7 @@ namespace ResturantApp.DAL
         public DbSet<InventoryItem> InventoryItem { get; set; }
         public DbSet<Location> Location { get; set; }
         public DbSet<MeasurementUnit> Unit { get; set; }
-        public DbSet<ProductionIngredient> ProductionItem { get; set; }
-        public DbSet<ProductionType> ProductionType { get; set; }
+        public DbSet<ProductionIngredient> ProductionItem { get; set; }       
         public DbSet<Purchase> Purchase { get; set; }
         public DbSet<PurchaseItem> PurchaseItem { get; set; }
         public DbSet<PurchaseOrder> PurchaseOrder { get; set; }
@@ -53,20 +52,7 @@ namespace ResturantApp.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-            //modelBuilder.Entity<Location>()
-            //    .HasMany<InventoryItem>(i => i.InventoryItems)
-            //    .WithRequired(l => l.Location)
-            //    .WillCascadeOnDelete();           
-            //modelBuilder.Entity<InventoryItem>()
-            //    .HasRequired(x => x.Location)
-            //    .WithRequiredDependent()
-            //    .WillCascadeOnDelete(false);
-            //foreach (var relationship in modelBuilder..Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
-            //{
-            //    relationship.DeleteBehavior = DeleteBehavior.Restrict;
-            ////}
-            //base.OnModelCreating(modelBuilder);
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();          
 
         }
 

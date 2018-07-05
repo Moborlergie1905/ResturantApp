@@ -31,7 +31,7 @@ namespace Repository.UnitOfWork
             Units = new MeasurementUnitRepository(_context);
             Productions = new ProductionRepository(_context);
             Ingredients = new ProductionItemRepository(_context);
-            ProductionTypes = new ProductionTypeRepository(_context);
+            Products = new ProductRepository(_context);
             Purchases = new PurchaseRepository(_context);
             PurchaseItems = new PurchaseItemRepository(_context);
             PurchaseOrders = new PurchaseOrderRepository(_context);
@@ -72,7 +72,7 @@ namespace Repository.UnitOfWork
 
         public IProductionRepository Productions { get; private set; }
 
-        public IProductionTypeRepository ProductionTypes { get; private set; }
+        public IProductRepository Products { get; private set; }
 
         public IPurchaseItemRepository PurchaseItems { get; private set; }
 

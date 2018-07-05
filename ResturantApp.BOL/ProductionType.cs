@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ResturantApp.BOL
 {
-    public class ProductionType
+    public enum ProductionType //Production on recipe or production on order
     {
-        public int ID { get; set; }
-        public string ProdType { get; set; }
+        Recipe = 1,
+        Order = 2
     }
 }
