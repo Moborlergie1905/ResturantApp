@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Supplier";
+}
+
+<div class="row">
+    <div class="col-8 offset-2">
+        <div id="supplierCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="viewSuppliers">
+                    @Html.Action("ViewSuppliers")
+                </div>
+                <div class="carousel-item" id="addSupplier">
+                    @Html.Action("AddOrEditSupplier")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -37,6 +37,10 @@ namespace Repository.UnitOfWork
         IWastageItemRepository WastageItems { get; }
         IWorkerRepository Workers { get; }
         IProductRepository Products { get; }
+        IItemLocationRepository ItemLocation { get; }
+        IStockHistoryRepository StockHistory { get; }
+        ICurrencyRepository Currencies { get; }
         Task<int> Complete();
+        int Save();
     }
 }

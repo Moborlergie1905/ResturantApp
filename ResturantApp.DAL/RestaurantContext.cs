@@ -48,6 +48,9 @@ namespace ResturantApp.DAL
         public DbSet<WastageItem> WastageItem { get; set; }
         public DbSet<LoginTrack> LoginTrack { get; set; }
         public DbSet<Roles> Roles { get; set; }
+        public DbSet<ItemLocation> ItemLocation { get; set; }
+        public DbSet<StockHistory> StockHistory { get; set; }
+        public DbSet<Currency> Currency { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

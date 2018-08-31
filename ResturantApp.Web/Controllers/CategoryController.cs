@@ -50,11 +50,11 @@ namespace ResturantApp.Web.Controllers
 
         }
 
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            Category category = UoW.Categories.Get(id);
+            Category category = await UoW.Categories.GetAsync(id);
             UoW.Categories.Remove(category);
-            UoW.Save();
+            await UoW.Complete();
             return RedirectToAction("ViewCategories");
         }
     }

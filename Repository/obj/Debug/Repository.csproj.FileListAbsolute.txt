@@ -1,17 +1,3 @@
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\Repository.dll.config
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\Repository.dll
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\Repository.pdb
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\EntityFramework.dll
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.BOL.dll
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.DAL.dll
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.BOL.pdb
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.DAL.pdb
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\EntityFramework.xml
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.dll
-C:\Users\Adnol Multimedia\Documents\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.pdb
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\Repository.dll.config
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\Repository.dll
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\Repository.pdb
@@ -20,9 +6,13 @@ D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\EntityFramewor
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.BOL.dll
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.DAL.dll
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.BOL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.BOL.dll.config
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.DAL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\ResturantApp.DAL.dll.config
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\EntityFramework.xml
 D:\Bolaji\Resturant Application\ResturantApp\Repository\bin\Debug\EntityFramework.SqlServer.xml
-D:\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+D:\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+D:\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+D:\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.csproj.CopyComplete
 D:\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.dll
 D:\Bolaji\Resturant Application\ResturantApp\Repository\obj\Debug\Repository.pdb

@@ -13,13 +13,12 @@ namespace ResturantApp.BOL
     public class InventoryItem
     {
         public InventoryItem()
-        {
-            Locations = new HashSet<Location>();           
+        {           
+            DateStocked = DateTime.Now;          
         }
         [Key]
         public int ItemID { get; set; }
-        public string Barcode { get; set; }
-        public string Description { get; set; }
+        public string Barcode { get; set; }       
         [Display(Name = "Product code")]
         public string ProductCode { get; set; }
         [ForeignKey("Group")]
@@ -45,15 +44,19 @@ namespace ResturantApp.BOL
         public int Max { get; set; }
         [Display(Name = "Date stocked")]
         public DateTime DateStocked { get; set; }
-        public byte IsExpiry { get; set; }   
-        public byte HideInReport { get; set; }
-        public byte Disconitued { get; set; }
-        public string ImagePath { get; set; }
+        [DisplayName("Is Expiry?")]
+        public bool IsExpiry { get; set; }   
+        [DisplayName("Hide in Report?")]
+        public bool HideInReport { get; set; }
+        [DisplayName("Discontinued")]
+        public bool Disconitued { get; set; }       
        
         public virtual Group Group { get; set; }
-        public virtual ICollection<Location> Locations { get; set; }
+        public virtual ICollection<ItemLocation> ItemLocations { get; set; }
         public virtual ICollection<Expiration> Expiration { get; set; }
         public virtual ICollection<PurchaseItem> PurchaseItems { get; set; } 
-        public virtual Product Product { get; set; }       
+        public virtual Product Product { get; set; }  
+        public virtual ICollection<StockHistory> Logs { get; set; }
+        public virtual MeasurementUnit Unit { get; set; }
     }
 }

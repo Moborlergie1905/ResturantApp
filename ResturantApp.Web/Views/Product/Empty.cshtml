@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Empty";
+    Layout = null;
+}
+<p>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("AddOrEditProduct","Product", new { id=0})', document.getElementById('addProduct'), document.getElementById('productCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+</p>
+<h5>Product list is empty</h5>
+

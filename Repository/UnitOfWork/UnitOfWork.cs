@@ -44,63 +44,42 @@ namespace Repository.UnitOfWork
             Wastages = new WastageRepository(_context);
             WastageItems = new WastageItemRepository(_context);
             Workers = new WorkerRepository(_context);
+            ItemLocation = new ItemLocationRepository(_context);
+            StockHistory = new StockHistoryRepository(_context);
+            Currencies = new CurrencyRepository(_context);
         }
 
-        public IAdjustmentRepository Adjustments { get; private set; }           
-
+        public IAdjustmentRepository Adjustments { get; private set; }   
         public IAdjustmentItemRepository AdjustmentsItems { get; private set; }
-
         public IBranchRepository Branches { get; private set; }
-
         public ICategoryRepository Categories { get; private set; }
-
         public ICustomerRepository Customers { get; private set; }
-
         public IDeliveryRepository Deliveries { get; private set; }
-
         public IDeliveryItemRepository DeliveryItems { get; private set; }
-
         public IDivisionRepository Divisions { get; private set; }
-
         public IExpirationRepository Expirations { get; private set; }
-
         public IGroupRepository Groups { get; private set; }
-
         public IProductionItemRepository Ingredients { get; private set; }
-
         public ILocationRepository Locations { get; private set; }
-
         public IProductionRepository Productions { get; private set; }
-
         public IProductRepository Products { get; private set; }
-
         public IPurchaseItemRepository PurchaseItems { get; private set; }
-
         public IPurchaseOrderItemRepository PurchaseOrderItems { get; private set; }
-
         public IPurchaseOrderRepository PurchaseOrders { get; private set; }
-
         public IPurchaseRepository Purchases { get; private set; }
-
         public ISalesInvoiceItemRepository SalesInvoiceItems { get; private set; }
-
         public ISalesInvoiceRepository SalesInvoices { get; private set; }
-
         public IInventoryItemRepository Stocks { get; private set; }
-
         public ISupplierRepository Suppliers { get; private set; }
-
         public ITransferItemRepository TransferItems { get; private set; }
-
         public ITransferRepository Transfers { get; private set; }
-
         public IMeasurementUnitRepository Units { get; private set; }
-
         public IWastageItemRepository WastageItems { get; private set; }
-
         public IWastageRepository Wastages { get; private set; }
-
         public IWorkerRepository Workers { get; private set; }
+        public IItemLocationRepository ItemLocation { get; private set; }
+        public IStockHistoryRepository StockHistory { get; private set; }
+        public ICurrencyRepository Currencies { get; private set; }
 
         public async Task<int> Complete()
         {

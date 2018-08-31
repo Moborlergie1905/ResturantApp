@@ -12,9 +12,9 @@ namespace ResturantApp.BOL
     {
         [Key]
         public int ID { get; set; }
-        [ForeignKey("Purchase")]
+        [ForeignKey("Purchase"), Display(Name = "Purchase Id")]
         public int PurchaseId { get; set; }
-        [ForeignKey("InverntoryItem")]
+        [ForeignKey("InverntoryItem"), Display(Name = "Item")]
         public int InventItemId { get; set; }
         public int Quantity { get; set; }
         [ForeignKey("MeasurementUnit")]

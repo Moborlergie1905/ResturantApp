@@ -88,9 +88,13 @@ D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\WebGre
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\Newtonsoft.Json.dll
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\Antlr3.Runtime.dll
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\Repository.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\Repository.dll.config
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\ResturantApp.BOL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\ResturantApp.BOL.dll.config
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\ResturantApp.DAL.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\ResturantApp.DAL.dll.config
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\ResturantApp.Web.pdb
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\ResturantApp.Web.dll.config
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\EntityFramework.xml
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\EntityFramework.SqlServer.xml
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\System.Web.Mvc.xml
@@ -101,6 +105,8 @@ D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\System
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\Microsoft.Web.Infrastructure.xml
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\Newtonsoft.Json.xml
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\bin\Debug\Antlr3.Runtime.pdb
-D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\obj\Debug\ResturantApp.Tests.csprojResolveAssemblyReference.cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\obj\Debug\ResturantApp.Tests.csprojAssemblyReference.cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\obj\Debug\ResturantApp.Tests.csproj.CoreCompileInputs.cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\obj\Debug\ResturantApp.Tests.csproj.CopyComplete
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\obj\Debug\ResturantApp.Tests.dll
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.Tests\obj\Debug\ResturantApp.Tests.pdb

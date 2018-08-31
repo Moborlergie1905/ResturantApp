@@ -1,61 +1,16 @@
-﻿@model IEnumerable<ResturantApp.BOL.InventoryItem>
-
+﻿
 @{
     ViewBag.Title = "Stock";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-@*<ol class="breadcrumb">
-    <li class="breadcrumb-item">
-        <a href="#">Dashboard</a>
-        @Html.ActionLink("Dashboard","Index","Home")
-    </li>
-    <li class="breadcrumb-item active">Stock</li>
-</ol>*@
-<div class="card mb-3">
-    <div class="card-header">
-        <i class="fa fa-table"> Stock Level</i>
-        <a href="Stock/Create" style="float:right" class="btn btn-primary">
-            <i class="fa fa-plus"> New</i>
-        </a>       
-    </div>
-    <div class="card-body">
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Product Code</th>
-                        <th>Description</th>
-                        <th>Group</th>
-                        @*<td>Category</td>*@
-                        @*<th>Location</th>*@
-                        <th>Level</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @if (Model != null)
-                    {
-                        foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.ProductCode</td>
-                                <td>@item.Description</td>
-                                <td>@item.Group.Name</td>
-                                @*<td>@item.Location.Name</td>*@
-                                <td>@item.Quantity</td>
-                                <td>Update</td>
-                            </tr>
-                        }
-                    }                   
-                </tbody>
-            </table>
+<div id="stockCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item" id="viewStock">
+            @Html.Action("ViewItems","Stock")
+        </div>
+        <div class="carousel-item active" id="addStock">
+            @Html.Action("AddOrEditItem", "Stock")
         </div>
     </div>
 </div>
-
-@section Scripts{   
-<script src="~/Scripts/sb-admin/sb-admin-datatables.min.js"></script>
-}
 

@@ -53,6 +53,7 @@
     <Compile Include="Interfaces\IAdjustmentRepository.cs" />
     <Compile Include="Interfaces\IBranchRepository.cs" />
     <Compile Include="Interfaces\ICategoryRepository.cs" />
+    <Compile Include="Interfaces\ICurrencyRepository.cs" />
     <Compile Include="Interfaces\ICustomerRepository.cs" />
     <Compile Include="Interfaces\IDeliveryItemRepository.cs" />
     <Compile Include="Interfaces\IDeliveryRepository.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Interfaces\IExpirationRepository.cs" />
     <Compile Include="Interfaces\IGroupRepository.cs" />
     <Compile Include="Interfaces\IInventoryItemRepository.cs" />
+    <Compile Include="Interfaces\IItemLocationRepository.cs" />
     <Compile Include="Interfaces\IItemsRepository.cs" />
     <Compile Include="Interfaces\ILocationRepository.cs" />
     <Compile Include="Interfaces\IMeasurementUnitRepository.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ISalesInvoiceItemRepository.cs" />
     <Compile Include="Interfaces\ISalesInvoiceRepository.cs" />
+    <Compile Include="Interfaces\IStockHistoryRepository.cs" />
     <Compile Include="Interfaces\ISupplierRepository.cs" />
     <Compile Include="Interfaces\ITransferItemRepository.cs" />
     <Compile Include="Interfaces\ITransferRepository.cs" />
@@ -84,6 +87,7 @@
     <Compile Include="Repositories\AdjustmentRepository.cs" />
     <Compile Include="Repositories\BranchRepository.cs" />
     <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\CurrencyRepository.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Repositories\DeliveryItemRepository.cs" />
     <Compile Include="Repositories\DeliveryRepository.cs" />
@@ -91,6 +95,7 @@
     <Compile Include="Repositories\ExpirationRepository.cs" />
     <Compile Include="Repositories\GroupRepository.cs" />
     <Compile Include="Repositories\InventoryItemRepository.cs" />
+    <Compile Include="Repositories\ItemLocationRepository.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
     <Compile Include="Repositories\MeasurementUnitRepository.cs" />
     <Compile Include="Repositories\ProductionItemRepository.cs" />
@@ -103,6 +108,7 @@
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\SalesInvoiceItemRepository.cs" />
     <Compile Include="Repositories\SalesInvoiceRepository.cs" />
+    <Compile Include="Repositories\StockHistoryRepository.cs" />
     <Compile Include="Repositories\SupplierRepository.cs" />
     <Compile Include="Repositories\TransferItemRepository.cs" />
     <Compile Include="Repositories\TransferRepository.cs" />

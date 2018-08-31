@@ -12,14 +12,19 @@ namespace ResturantApp.BOL
     {
         [Key]
         public int PurchID { get; set; }
-        [ForeignKey("Supplier")]
+        [ForeignKey("Supplier"), Display(Name = "Supplier")]
         public int SupplierId { get; set; }
         public decimal Discount { get; set; }
+        [Display(Name = "Purchase date")]
         public DateTime OrderDate { get; set; }
+        [Display(Name = "Delivery date")]
         public DateTime DeliveryDate { get; set; }
         public string Note { get; set; }
+        [Display(Name = "Total freight")]
         public decimal TotalFreight { get; set; }
+        [Display(Name = "Other cost")]
         public decimal OtherCost { get; set; }
+        [Display(Name = "Total custom")]
         public decimal TotalCustom { get; set; }
         public decimal Tax { get; set; }
 

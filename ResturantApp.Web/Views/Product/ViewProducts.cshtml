@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ResturantApp.BOL.Product>
+
+@{
+    ViewBag.Title = "ViewProducts";
+    Layout = null;
+}
+
+
+<p>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("AddOrEditProduct","Product", new { id=0})', document.getElementById('addProduct'), document.getElementById('productCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+</p>
+<table class="table table-striped table-dark table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Class)
+        </th>        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Class)
+        </td>        
+        <td>
+            <a class="btn btn-success btn-sm text-white" onclick="Edit('@Url.Action("AddOrEditProduct","Product", new { id=@item.ProdID})', document.getElementById('addProduct'), document.getElementById('productCarousel'))"><i class="fa fa-pencil fa-lg"></i></a>
+            <a class="btn btn-danger btn-sm text-white" onclick="Delete('@Url.Action("DeleteProduct","Product", new { id=@item.ProdID})', document.getElementById('viewProduct'))"><i class="fa fa-trash fa-lg"></i></a>
+        </td>         
+    </tr>
+}
+
+</table>

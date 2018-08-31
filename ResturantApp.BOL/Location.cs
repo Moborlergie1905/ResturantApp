@@ -11,14 +11,13 @@ namespace ResturantApp.BOL
     {
         public Location()
         {
-            Branch = "Main";
-            InventoryItems = new HashSet<InventoryItem>();
+            Branch = "Main";           
         }
         [Key]
         public int LocID { get; set; }
         public string Name { get; set; }
         public string Branch { get; set; }
 
-        public virtual ICollection<InventoryItem> InventoryItems { get; set; }        
+        public virtual ICollection<ItemLocation> ItemLocations { get; set; }
     }
 }

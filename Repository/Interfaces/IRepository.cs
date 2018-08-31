@@ -13,7 +13,7 @@ namespace Repository.Interfaces
         TEntity Get(int id);
         Task<IEnumerable<TEntity>> GetAllAsync();
         IEnumerable<TEntity> GetAll();
-        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
+        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);      
 
         void Add(TEntity entity);
         void AddRange(IEnumerable<TEntity> entities);

@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Empty";
+    Layout = null;
+}
+
+<p>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("Create","Stock", new { id=0})', document.getElementById('addDivision'), document.getElementById('divisionCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+</p>
+<h5>Stock is empty</h5>

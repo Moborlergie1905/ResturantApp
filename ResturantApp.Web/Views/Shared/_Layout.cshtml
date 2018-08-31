@@ -35,7 +35,7 @@
                             @Html.ActionLink("Stock","Index","Stock")
                         </li>
                         <li>
-                            <a href="cards.html">Sales Invoice</a>
+                            @Html.ActionLink("Product", "Index", "Product")
                         </li>
                         <li>
                             <a href="cards.html">Purchase</a>
@@ -57,6 +57,9 @@
                         <span class="nav-link-text">Setting</span>
                     </a>
                     <ul class="sidenav-second-level collapse" id="collapseSettings">
+                        <li>
+                            @Html.ActionLink("Suppliers","Index","Supplier")
+                        </li>
                         <li>
                             <a href="login.html">Measurement Unit</a>
                         </li>

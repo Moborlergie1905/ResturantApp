@@ -77,6 +77,22 @@
     <Compile Include="Migrations\201807051518026_newModelDB.Designer.cs">
       <DependentUpon>201807051518026_newModelDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807221205175_plusItemLocationModel.cs" />
+    <Compile Include="Migrations\201807221205175_plusItemLocationModel.Designer.cs">
+      <DependentUpon>201807221205175_plusItemLocationModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807260827327_addStockHistory.cs" />
+    <Compile Include="Migrations\201807260827327_addStockHistory.Designer.cs">
+      <DependentUpon>201807260827327_addStockHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808251042066_adjustStocktbl.cs" />
+    <Compile Include="Migrations\201808251042066_adjustStocktbl.Designer.cs">
+      <DependentUpon>201808251042066_adjustStocktbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808260816595_currencytbl.cs" />
+    <Compile Include="Migrations\201808260816595_currencytbl.Designer.cs">
+      <DependentUpon>201808260816595_currencytbl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantContext.cs" />
@@ -112,6 +128,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807051518026_newModelDB.resx">
       <DependentUpon>201807051518026_newModelDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807221205175_plusItemLocationModel.resx">
+      <DependentUpon>201807221205175_plusItemLocationModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807260827327_addStockHistory.resx">
+      <DependentUpon>201807260827327_addStockHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808251042066_adjustStocktbl.resx">
+      <DependentUpon>201808251042066_adjustStocktbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808260816595_currencytbl.resx">
+      <DependentUpon>201808260816595_currencytbl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

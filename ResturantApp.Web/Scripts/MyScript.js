@@ -9,9 +9,28 @@
 
     });
 });
+
+var countryRequest = new XMLHttpRequest();
+countryRequest.open('GET', 'http://localhost/Restaurant/countries.json');
+countryRequest.onload = function () {
+    //console.log(countryRequest.responseText);
+    var countryData = JSON.parse(countryRequest.responseText);
+    //console.log(countryData[0].name)
+};
+countryRequest.send();
+
+function showImagePreview(imageUploader, imagePreview) {
+    if (imageUploader.files && imageUploader.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $(imagePreview).attr('src', e.target.result);
+        }
+        reader.readAsDataURL(imageUploader.files[0]);
+    }
+}
 function jQueryAjaxPost(form, viewDiv, addDiv, carosl) {
-    $.validator.unobtrusive.parse(form);
-    if ($(form).valid()) {
+    //$.validator.unobtrusive.parse(form);
+    //if ($(form).valid()) {
         var ajaxConfig = {
             type: 'POST',
             url: form.action,
@@ -27,7 +46,7 @@ function jQueryAjaxPost(form, viewDiv, addDiv, carosl) {
             ajaxConfig["processData"] = false;
         }
          $.ajax(ajaxConfig);
-    }   
+    //}   
     return false;
 }
 function refreshAddNew(resetUrl, addDiv, carsl, slideIndex) {
@@ -60,7 +79,7 @@ function Delete(url, viewDiv) {
             type: 'POST',
             url: url,
             success: function (response) {
-                $(viewDiv).html(response);
+                $(viewDiv).html(response);               
             }
         });
     }

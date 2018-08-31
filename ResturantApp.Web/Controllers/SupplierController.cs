@@ -2,37 +2,50 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using System.Linq;
 
 namespace ResturantApp.Web.Controllers
 {
     public class SupplierController : BaseController
     {
-        public async Task<ActionResult> Index()
-        {
-            var suppliers = await UoW.Suppliers.GetAllAsync();
-            return View(suppliers);
-        }
-
-        [HttpGet]
-        public ActionResult Create()
+        public ActionResult Index()
         {
             return View();
         }
 
-        [HttpPost]
-        public async Task<ActionResult> Create(Supplier supplier)
+        public IEnumerable<Supplier> GetSuppliers()
         {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-            else
-            {
-                UoW.Suppliers.Add(supplier);
-                await UoW.Complete();
+            var suppliers = UoW.Suppliers.GetAll();
+            return suppliers;
+        }
 
-                return RedirectToAction("Index");
-            }
+        public ActionResult ViewSuppliers()
+        {
+            var suppliers = GetSuppliers();
+            if (suppliers.Count() == 0)
+                return View("Empty");
+            return View(suppliers);
+        }
+
+        [HttpGet]
+        public ActionResult AddOrEditSupplier(int id = 0)
+        {
+            ViewBag.CurrencyID = new SelectList(UoW.Currencies.GetAll(), "ID", "CurrencyType");
+            Supplier supplier = new Supplier();
+            if (id != 0)
+                supplier = UoW.Suppliers.Get(id);
+            return View(supplier);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> AddOrEditSupplier(Supplier supplier)
+        {
+            if (supplier.SupID != 0)
+                UoW.Suppliers.Update(supplier);
+            else
+                UoW.Suppliers.Add(supplier);
+            await UoW.Complete();
+            return RedirectToAction("ViewSuppliers");
         }
 
         [HttpPost]
@@ -64,30 +77,9 @@ namespace ResturantApp.Web.Controllers
                 return RedirectToAction("Index");
             }
         }
+       
 
-        [HttpGet]
-        public async Task<ActionResult> Update(int id)
-        {
-            var supplier = await UoW.Suppliers.GetAsync(id);
-            if (supplier != null)
-            {
-                return View(supplier);
-            }
-            else
-            {
-                return RedirectToAction("Index");
-            }
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Update(Supplier supplier)
-        {
-            UoW.Suppliers.Update(supplier);
-            await UoW.Complete();
-            return RedirectToAction("Index");
-        }
-
-        public async Task<ActionResult> Delete(int id)
+        public async Task<ActionResult> DeleteSupplier(int id)
         {
             var supplier = await UoW.Suppliers.GetAsync(id);
             if (supplier != null)

@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
+using ResturantApp.BOL.Enums;
 
 namespace ResturantApp.BOL
 {
     public class Product
     {
         [Key]
-        public int ProdID { get; set; }       
-        public string Name { get; set; }  
-        public ProductType Class { get; set; }             
+        public int ProdID { get; set; }  
+        [Required]
+        public string Name { get; set; }
+        public string Description { get; set; }
+        [Required]
+        public ProductType Class { get; set; }  
+        [DisplayName("Image")]
         public string ImagePath { get; set; }
 
         [NotMapped]

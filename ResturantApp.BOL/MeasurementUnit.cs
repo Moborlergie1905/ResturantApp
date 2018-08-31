@@ -16,7 +16,7 @@ namespace ResturantApp.BOL
         [Required(ErrorMessage = "Enter unit name")]
         public string UnitName { get; set; }
         [DisplayName("Unit")]
-        [Required(ErrorMessage = "Enter unit name")]
+        [Required(ErrorMessage = "Enter unit")]
         public string Notation { get; set; }
     }
 }

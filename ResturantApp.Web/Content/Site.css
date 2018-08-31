@@ -50,4 +50,48 @@ ul.nav.nav-tabs li.active a{
 .label-size{
     font-size:12px !important;
 }
- 
+.base-line{
+    border-bottom:1px solid blue !important;
+}
+
+.form-group{
+    margin-bottom:5px !important;
+}
+
+.page-wrap{
+    height:450px;
+}
+
+.product-list {
+    /*padding: 5px;*/
+    max-height: 400px;
+    /*overflow-y: auto;*/
+}
+
+.crd {
+    overflow-y: initial !important;
+}
+.product-list ::-webkit-scrollbar{
+    width:5px;
+}
+
+.product-list ::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+.product-list ::-webkit-scrollbar-thumb{
+    background:#888;
+}
+
+.product-list ::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
+
+.list-group-item{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.inline-label{
+    margin-bottom:-5px;
+}

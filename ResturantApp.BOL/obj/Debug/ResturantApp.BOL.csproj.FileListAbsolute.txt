@@ -15,6 +15,8 @@ D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFr
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.SqlServer.dll
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.xml
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.csproj.CoreCompileInputs.cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.csproj.CopyComplete
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.dll
 D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.pdb
-D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.csprojResolveAssemblyReference.cache
+D:\Bolaji\Resturant Application\ResturantApp\ResturantApp.BOL\obj\Debug\ResturantApp.BOL.csprojAssemblyReference.cache

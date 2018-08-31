@@ -1,4 +1,6 @@
 ﻿using ResturantApp.BOL;
+using ResturantApp.Web.ViewModel;
+//using ResturantApp.Web.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,30 +12,57 @@ namespace ResturantApp.Web.Controllers
 {
     public class StockController : BaseController
     {      
-        public async Task<ActionResult> Index()
+        public ActionResult Index()
         {
-            var stock = await UoW.Stocks.GetAllAsync();
-            return View(stock);
+            return View();
+        }
+        public ActionResult ViewItems()
+        {
+            var stocks = GetItems();
+            if (stocks.Count() == 0)
+                return View("Empty");
+            return View(stocks);
+        }
+
+        public IEnumerable<InventoryItem> GetItems()
+        {
+            var stocks = UoW.Stocks.GetAll();
+            return stocks;
         }
 
         [HttpGet]
-        public ActionResult Create(int id = 0)
+        public ActionResult AddOrEditItem(int id = 0)
         {
+            ViewBag.Locations = UoW.Locations.GetAll();
             ViewBag.GroupID = new SelectList(UoW.Groups.GetAll(), "GpID", "Name");
-            ViewBag.ProductID = new SelectList(UoW.Products.GetAll(), "ProdID", "Name");
-            InventoryItem item = new InventoryItem();
-            if (item.ItemID != 0)
-                item = UoW.Stocks.Get(id);
-            return View(item);
+            ViewBag.Products = UoW.Products.GetAll();
+            ViewBag.Unit = new SelectList(UoW.Units.GetAll(), "Notation", "Notation");
+            // InventoryItem item = new InventoryItem();
+            ItemViewVM itemVM = new ItemViewVM();
+           // itemVM.Locations = UoW.Locations.GetAll();
+            itemVM.Item = new InventoryItem();
+            itemVM.Products = UoW.Products.GetAll();
+            if (itemVM.Item.ItemID != 0)
+                itemVM.Item = UoW.Stocks.Get(id);
+            return View(itemVM);
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(InventoryItem stock)
+        public async Task<ActionResult> AddOrEditItem(InventoryItem item)
         {           
-            if (stock.ItemID != 0)
-                UoW.Stocks.Update(stock);
+            if (item.ItemID != 0)
+            {
+                UoW.Stocks.Update(item);
+                //UoW.Expirations.Update(item.Expiry);
+            }
+
             else
-                UoW.Stocks.Add(stock);
+            {               
+                UoW.Stocks.Add(item);
+               // item.Expiry.InvItemId = item.Item.ItemID;
+               // UoW.Expirations.Add(item.Expiry);
+            }
+              
             await UoW.Complete();
             return RedirectToAction("Index");
         }

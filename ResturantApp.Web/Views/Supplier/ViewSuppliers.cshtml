@@ -1,0 +1,110 @@
+﻿@model IEnumerable<ResturantApp.BOL.Supplier>
+
+@{
+    ViewBag.Title = "ViewSuppliers";
+    Layout = null;
+}
+
+
+<p>
+    <a class="btn btn-primary btn-lg text-white" onclick="refreshAddNew('@Url.Action("AddOrEditSupplier","Supplier", new { id=0})', document.getElementById('addSupplier'), document.getElementById('supplierCarousel'), 1)"><i class="fa fa-plus fa-lg"></i></a>
+</p>
+<table class="table table-striped table-dark table-hover">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Currency.CurrencyType)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Company)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContacName)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.ContactTitle)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.Fax)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.AccountNumber)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.BankInfo)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.PaymentTerm)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Grade)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Currency.CurrencyType)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Company)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContacName)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.ContactTitle)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumber)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Mobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fax)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.AccountNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankInfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaymentTerm)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Grade)
+        </td>
+        <td>
+            <a class="btn btn-success btn-sm text-white" onclick="Edit('@Url.Action("AddOrEditSupplier","Suppler", new { id=@item.SupID})', document.getElementById('addSupplier'), document.getElementById('supplierCarousel'))"><i class="fa fa-pencil fa-lg"></i></a>
+            <a class="btn btn-danger btn-sm text-white" onclick="Delete('@Url.Action("DeleteSupplier","Suppler", new { id=@item.SupID})', document.getElementById('viewSuppliers'))"><i class="fa fa-trash fa-lg"></i></a>
+        </td>
+    </tr>
+}
+
+</table>
